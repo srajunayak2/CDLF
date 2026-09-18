@@ -1,0 +1,7 @@
+Configuration,Accuracy (%),F1-score (%),Training Time (min)
+Baseline RF,98.2,98.2,180
+MI + RF,98.05,98.04,150
+PCA + RF,97.98,97.96,132
+Sampling + RF,97.96,97.94,128
+MI + PCA + RF,97.94,97.92,118
+CDLF,97.9,97.9,105

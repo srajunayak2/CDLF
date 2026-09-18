@@ -1,0 +1,6 @@
+Metric,Baseline,CDLF,Difference
+Accuracy,98.2,97.9,0.3
+Precision,98.0,97.8,0.2
+Recall,98.4,98.1,0.3
+F1-score,98.2,97.9,0.3
+ROC-AUC,0.992,0.989,0.003

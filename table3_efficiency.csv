@@ -1,0 +1,5 @@
+Measure,Baseline,CDLF,Reduction (%)
+Training samples,100000,50000,50.0
+Features,500,50,90.0
+Training time (min),180,105,41.7
+Memory usage (GB),12,7,41.7

@@ -1,0 +1,75 @@
+% Ready-to-copy IEEE-style table examples for the current manuscript.
+% Replace provisional values with actual experiment outputs before final submission.
+
+\begin{table}[htbp]
+\centering
+\caption{Feature and Sample Reduction}
+\label{tab:feature_sample_reduction}
+\scriptsize
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+\textbf{Stage} & \textbf{Features} & \textbf{FR (\%)} & \textbf{Samples} & \textbf{SR (\%)}\\
+\hline
+Original & 500 & 0.0 & 100000 & 0.0\\
+After MI & 180 & 64.0 & 100000 & 0.0\\
+After PCA & 50 & 90.0 & 100000 & 0.0\\
+After Sampling & 50 & 90.0 & 50000 & 50.0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Classification Performance}
+\label{tab:classification}
+\scriptsize
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Metric} & \textbf{Baseline} & \textbf{CDLF} & \textbf{Difference}\\
+\hline
+Accuracy & 98.20\% & 97.90\% & 0.30 pp\\
+Precision & 98.00\% & 97.80\% & 0.20 pp\\
+Recall & 98.40\% & 98.10\% & 0.30 pp\\
+F1-score & 98.20\% & 97.90\% & 0.30 pp\\
+ROC-AUC & 0.992 & 0.989 & 0.003\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Computational Efficiency}
+\label{tab:efficiency}
+\scriptsize
+\begin{tabular}{|l|r|r|r|}
+\hline
+\textbf{Measure} & \textbf{Baseline} & \textbf{CDLF} & \textbf{Reduction}\\
+\hline
+Training samples & 100000 & 50000 & 50.0\%\\
+Features & 500 & 50 & 90.0\%\\
+Training time & 180 min & 105 min & 41.7\%\\
+Memory usage & 12 GB & 7 GB & 41.7\%\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Paired Statistical Validation of Baseline and CDLF}
+\label{tab:statistical}
+\scriptsize
+\begin{tabular}{|l|r|r|r|r|r|r|c|}
+\hline
+\textbf{Metric} & \textbf{Baseline} & \textbf{CDLF} & \textbf{Mean Diff.} & \textbf{Std. Dev.} & \textbf{t} & \textbf{p} & \textbf{Decision}\\
+\hline
+Accuracy & 98.20 & 97.90 & -0.30 & 0.66 & -1.31 & 0.210 & NS\\
+Precision & 98.00 & 97.80 & -0.20 & 0.83 & -1.08 & 0.294 & NS\\
+Recall & 98.40 & 98.10 & -0.30 & 0.76 & -1.24 & 0.235 & NS\\
+F1-score & 98.20 & 97.90 & -0.30 & 0.72 & -1.29 & 0.216 & NS\\
+ROC-AUC & 99.20 & 98.90 & -0.30 & 0.72 & -1.17 & 0.258 & NS\\
+\hline
+\end{tabular}
+\end{table}
+
+% For the actual final paper, generate these tables from the measured CSV files
+% produced by run_cdlf.py and make_tables.py.

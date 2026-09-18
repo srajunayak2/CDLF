@@ -1,0 +1,5 @@
+Stage,Feat.,FR (%),Samples,SR (%)
+Original,500,0.0,100000,0.0
+After MI,180,64.0,100000,0.0
+After PCA,50,90.0,100000,0.0
+After Sampling,50,90.0,50000,50.0

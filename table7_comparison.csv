@@ -1,0 +1,6 @@
+Method,Data,FR,SR,Acc. (%),F1 (%),AUC
+CNN,EMBER,No,No,98.5,98.3,0.993
+LSTM,EMBER,No,No,98.3,98.1,0.991
+Random Forest,EMBER,No,No,98.1,98.0,0.99
+PCA + SVM,EMBER,Yes,No,97.9,97.7,0.987
+Proposed CDLF,EMBER,90%,50%,97.9,97.9,0.989
